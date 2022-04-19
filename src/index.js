@@ -2,10 +2,7 @@ import process from 'process';
 import path from 'path';
 import { readFileSync } from 'fs';
 import compareData from './compareData.js';
-
-const render = (data) => {
-  console.log(data);
-};
+import reformat from './reformat.js';
 
 const getFilePath = (filename) => path.resolve(process.cwd(), filename);
 const readFile = (filename) => readFileSync(getFilePath(filename), 'utf-8');
@@ -17,7 +14,7 @@ const genDiff = (fileName1, fileName2) => {
   const data2 = JSON.parse(file2);
   const diffData = compareData(data1, data2);
 
-  return render(diffData);
+  return reformat(diffData);
 };
 
 export default genDiff;

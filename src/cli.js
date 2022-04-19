@@ -11,7 +11,7 @@ program
   .version('1.0.0')
   .option('-f, --format <type>', 'output format')
   .action((filepath1, filepath2) => {
-    genDiff(filepath1, filepath2);
+    console.log(genDiff(filepath1, filepath2));
   });
 
 export default program;
