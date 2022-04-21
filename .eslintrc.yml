@@ -9,7 +9,9 @@ extends:
 parserOptions:
   ecmaVersion: 13
   sourceType: module
-rules: {}
+rules: {
+  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
+}
 "overrides": [
     {
       "files": ["*.js"],
