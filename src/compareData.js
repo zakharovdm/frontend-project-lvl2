@@ -7,6 +7,10 @@ const compareData = (data1, data2) => {
     const value1 = data1[key];
     const value2 = data2[key];
 
+    if (_.isPlainObject(value1) && _.isPlainObject(value2)) {
+      return { type: 'recursion', name: key, value: compareData(value1, value2) };
+    }
+
     if (!_.has(data1, key)) {
       return { type: 'added', name: key, value: value2 };
     }
