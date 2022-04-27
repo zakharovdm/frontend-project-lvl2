@@ -9,3 +9,6 @@
 
 ### Comparison of two flat YAML files.
 [![asciicast](https://asciinema.org/a/Jc9JZ1ZxhGnc9EdkyFUXot7RS.svg)](https://asciinema.org/a/Jc9JZ1ZxhGnc9EdkyFUXot7RS)
+
+### Comparison of two nested files.
+[![asciicast](https://asciinema.org/a/ZsI9MsoAYsxMKns8orGu61zpp.svg)](https://asciinema.org/a/ZsI9MsoAYsxMKns8orGu61zpp)
