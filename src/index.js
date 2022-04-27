@@ -2,13 +2,13 @@ import process from 'process';
 import path from 'path';
 import { readFileSync } from 'fs';
 import compareData from './compareData.js';
-import stylish from './formatters/stylish.js';
+import formatter from './formatters/formatter.js';
 import parse from './parsers.js';
 
 const getFilePath = (filename) => path.resolve(process.cwd(), filename);
 const readFile = (filename) => readFileSync(getFilePath(filename), 'utf-8');
 
-const genDiff = (fileName1, fileName2, formatter = stylish) => {
+const genDiff = (fileName1, fileName2, format = stylish) => {
   const file1 = readFile(fileName1);
   const file2 = readFile(fileName2);
 
@@ -20,7 +20,7 @@ const genDiff = (fileName1, fileName2, formatter = stylish) => {
 
   const diffData = compareData(data1, data2);
 
-  return formatter(diffData);
+  return formatter(diffData, format);
 };
 
 export default genDiff;
