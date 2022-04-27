@@ -8,7 +8,7 @@ import parse from './parsers.js';
 const getFilePath = (filename) => path.resolve(process.cwd(), filename);
 const readFile = (filename) => readFileSync(getFilePath(filename), 'utf-8');
 
-const genDiff = (fileName1, fileName2) => {
+const genDiff = (fileName1, fileName2, formatter = stylish) => {
   const file1 = readFile(fileName1);
   const file2 = readFile(fileName2);
 
@@ -20,7 +20,7 @@ const genDiff = (fileName1, fileName2) => {
 
   const diffData = compareData(data1, data2);
 
-  return stylish(diffData);
+  return formatter(diffData);
 };
 
 export default genDiff;
