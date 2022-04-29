@@ -2,7 +2,7 @@ import process from 'process';
 import path from 'path';
 import { readFileSync } from 'fs';
 import compareData from './compareData.js';
-import formatter from './formatters/formatter.js';
+import formatter from './formatters/index.js';
 import parse from './parsers.js';
 
 const getFilePath = (filename) => path.resolve(process.cwd(), filename);
