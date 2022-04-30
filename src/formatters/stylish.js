@@ -31,7 +31,7 @@ const stylish = (innerTree) => {
       case 'unchanged':
         return getFormattedValue(node.value, ' ');
       case 'nested':
-        return `${getIndent(depth)}  ${node.name}: {\n${iter(node.value, depth + 1).join('')}${getIndent(depth)}  }\n`;
+        return `${getIndent(depth)}  ${node.name}: {\n${iter(node.children, depth + 1).join('')}${getIndent(depth)}  }\n`;
       default:
         throw new Error(`This type does not exist ${node.type}`);
     }

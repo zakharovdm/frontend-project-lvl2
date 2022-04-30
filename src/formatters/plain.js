@@ -24,7 +24,7 @@ const plain = (innerTree) => {
         case 'changed':
           return `Property '${pathValue}' was updated. From ${formattedValue(node.value1)} to ${formattedValue(node.value2)}`;
         case 'nested':
-          return `${iter(node.value, pathValue)}`;
+          return `${iter(node.children, pathValue)}`;
         case 'unchanged':
           return [];
         default:
