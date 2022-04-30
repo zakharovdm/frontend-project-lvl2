@@ -18,3 +18,7 @@ test('Compare two files, format stylish', () => {
 test('Compare two files, format plain', () => {
   expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.yml'), 'plain')).toEqual(readFile('plainOutput.txt'));
 });
+
+test('Compare two files, format json', () => {
+  expect(genDiff(getFixturePath('file1.json'), getFixturePath('file2.yml'), 'json')).toEqual(readFile('jsonOutput.json'));
+});

@@ -19,6 +19,7 @@ const genDiff = (fileName1, fileName2, format = 'stylish') => {
   const data2 = parse(file2, format2);
 
   const diffData = compareData(data1, data2);
+  console.log(JSON.stringify(diffData));
 
   return formatter(diffData, format);
 };
