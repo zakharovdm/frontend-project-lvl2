@@ -12,3 +12,6 @@
 
 ### Comparison of two nested files.
 [![asciicast](https://asciinema.org/a/ZsI9MsoAYsxMKns8orGu61zpp.svg)](https://asciinema.org/a/ZsI9MsoAYsxMKns8orGu61zpp)
+
+### Output plain format.
+[![asciicast](https://asciinema.org/a/Q7PRnuskru0fXXe1BPKyIGbWu.svg)](https://asciinema.org/a/Q7PRnuskru0fXXe1BPKyIGbWu)
