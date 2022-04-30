@@ -4,6 +4,23 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6f5b41fd6c32db35ca28/test_coverage)](https://codeclimate.com/github/zakharovdm/frontend-project-lvl2/test_coverage)
 ![eslint](https://github.com/zakharovdm/frontend-project-lvl2/actions/workflows/eslint_tests-check.yml/badge.svg)
 
+# Difference calculator.
+
+A program that determines the difference between two data structures.
+
+### Utility features:
+* Support for different input formats: yaml, json.
+* Report generation as plain text, stylish and json.
+
+### Quick start.
+
+```
+make install
+```
+* Help output
+```
+gendiff -h
+```
 ### Comparison of two flat JSON files.
 [![asciicast](https://asciinema.org/a/2bMR7vBLXiM49HhVsMLJAfJmt.svg)](https://asciinema.org/a/2bMR7vBLXiM49HhVsMLJAfJmt)
 
